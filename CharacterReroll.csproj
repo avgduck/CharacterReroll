@@ -48,5 +48,10 @@
             <_BuildFiles Include="build\*" />
         </ItemGroup>
         <Copy SourceFiles="@(_BuildFiles)" DestinationFolder="C:\Users\Owner\AppData\Roaming\r2modmanPlus-local\LethalLeagueBlaze\profiles\Dev\BepInEx\plugins\CharacterReroll" />
+
+        <ItemGroup>
+            <_AssetFiles Include="assets\*" />
+        </ItemGroup>
+        <Copy SourceFiles="@(_AssetFiles)" DestinationFolder="C:\Users\Owner\AppData\Roaming\r2modmanPlus-local\LethalLeagueBlaze\profiles\Dev\BepInEx\plugins\CharacterReroll\assets" />
     </Target>
 </Project>
