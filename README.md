@@ -1,6 +1,6 @@
 # [CharacterReroll](https://thunderstore.io/c/lethal-league-blaze/p/avg_duck/CharacterReroll/)
 
-Reworks the random character select! The random button now rolls a character for you on the character select screen, and allows you to reroll your choice.
+Reworks the random character select! The random button now rolls a character and skin for you on the character select screen, and allows you to reroll your choice.
 
 ![Random preview](https://raw.githubusercontent.com/avgduck/CharacterReroll/master/preview-images/random.gif)
 

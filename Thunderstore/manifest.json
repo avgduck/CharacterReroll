@@ -1,6 +1,6 @@
 {
   "name": "CharacterReroll",
-  "version_number": "1.0.0",
+  "version_number": "1.1.0",
   "website_url": "https://github.com/avgduck/CharacterReroll",
   "description": "Makes the random button roll on click during character select",
   "dependencies": [
