@@ -40,6 +40,13 @@
         <HintPath>libs\UnityEngine.UI.dll</HintPath>
       </Reference>
     </ItemGroup>
+
+    <ItemGroup>
+        <_ReleaseFiles Include="Thunderstore\icon.png" />
+        <_ReleaseFiles Include="Thunderstore\manifest.json" />
+        <_ReleaseFiles Include="README.md" />
+        <_ReleaseFiles Include="CHANGELOG.md" />
+    </ItemGroup>
     
     <Target Name="PostBuild" AfterTargets="PostBuildEvent">
         <Copy SourceFiles="bin\Debug\net35\CharacterReroll.dll" DestinationFolder="build" />
@@ -53,5 +60,9 @@
             <_AssetFiles Include="assets\*" />
         </ItemGroup>
         <Copy SourceFiles="@(_AssetFiles)" DestinationFolder="C:\Users\Owner\AppData\Roaming\r2modmanPlus-local\LethalLeagueBlaze\profiles\Dev\BepInEx\plugins\CharacterReroll\assets" />
+
+        <Copy SourceFiles="@(_BuildFiles)" DestinationFolder="release" />
+        <Copy SourceFiles="@(_ReleaseFiles)" DestinationFolder="release" />
+        <Copy SourceFiles="@(_AssetFiles)" DestinationFolder="release/BepInEx/plugins/assets" />
     </Target>
 </Project>
